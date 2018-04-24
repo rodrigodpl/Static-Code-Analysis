@@ -68,7 +68,7 @@ First, we must download the necessary files. The installation files for CppCheck
 [CppCheck](http://cppcheck.sourceforge.net/)         
 [VGC](https://sourceforge.net/projects/visualcodegrepp/)      
 
-Alternatively, they are included in the latest release of the Github repository linked to this web, which also contains a small test program to chech SCA functionality. You can use any project he wishes to analyze, yet it must be kept in mind that the comments about errors in the following steps refer only to the provided test code.
+Alternatively, they are included in the latest release of the Github repository linked to this web, which also contains a small test program to chech SCA functionality. You can use any project you wish to analyze, yet it must be kept in mind that the comments about errors in the following steps refer only to the provided test code.
 
 #### TODO 1
 
