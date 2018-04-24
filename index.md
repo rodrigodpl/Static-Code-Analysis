@@ -1,6 +1,10 @@
+## Introduction
+
 In the following page it is going to be explained what is a Static Code Analysis tool and how to use them in your own Visual Studio projects.
 
-I am <link to your linkedIn>(NAME LASTNAME), student of the <https://www.citm.upc.edu/ing/estudis/graus-videojocs/>(Bachelor’s Degree in Video Games by UPC at CITM). This content is generated for the second year’s subject Project 2, under supervision of lecturer <https://es.linkedin.com/in/ricardpillosu>(Ricard Pillosu).
+I am <link to your linkedIn>(NAME LASTNAME), student of the <https://www.citm.upc.edu/ing/estudis/graus-videojocs/>(Bachelor’s Degree in Video Games by UPC at CITM). This content is generated for the second year’s subject Project 2, under supervision of lecturer <https://es.linkedin.com/in/ricardpillosu> (Ricard Pillosu).
+
+____
 
 ## What does it mean Static Code Analysis?
 
@@ -23,7 +27,8 @@ So, SCA is a tool which looks for errors on a specific set of code, before the e
 
 In the following link you can watch a very informative short video about how does work Coverity, an online SCA tool. The functionality described in the video can be extrapolated to most current SCA tools in the market, so it's worth the watch.
 
-https://community.synopsys.com/s/article/Coverity-Tutorial-Introduction-to-Coverity
+[Video tutorial about SCA online tools](https://community.synopsys.com/s/article/Coverity-Tutorial-Introduction-to-Coverity)        
+*Credits to Coverity developers for creating and sharing the video*
 
 A summary of the ideas of the video could be:
 
@@ -50,12 +55,14 @@ Some online SCA tools are:
 1. **Coverity** ( Paid/ integrated with Git/ supports Java, C++, C# Python and Ruby)        
 2. **QonCAT** (Paid/ supports multiple languages / quality analysis and metrics)       
 
+____
+
 # Tutorial
 
 Next, it's provided a brief tutorial so readers can easily implement SCA tools into their projects.
 Each step of the tutorial will be named as TODO X.
 
-### TODO 0
+#### TODO 0
 
 First, we must download the necessary files. The installation files for CppCheck and Visual Code Grepper can be found in their respective websites:        
 [CppCheck](http://cppcheck.sourceforge.net/)         
@@ -63,11 +70,11 @@ First, we must download the necessary files. The installation files for CppCheck
 
 Alternatively, they are included in the latest release of the Github repository linked to this web, which also contains a small test program to chech SCA functionality. You can use any project he wishes to analyze, yet it must be kept in mind that the comments about errors in the following steps refer only to the provided test code.
 
-### TODO 1
+#### TODO 1
 
 Install CppCheck using default options. You can add pyhton functionality if you wish.
 
-### TODO 2
+#### TODO 2
 
 Before contiuning, it must be noted that CppCheck runs locally, so you need the projects files to analyze in your computer. If you have them stored in the cloud, download them.       
 
@@ -77,7 +84,7 @@ Create a folder where we will store our CppCheck files and the output of the ana
 
 In the CppCheck menu, go to **New Project**, choose our *bugtracking* folder as location and choose a name for your CppCheck file.     
 
-### TODO 3
+#### TODO 3
 
 A project configuration pop-up will appear.
 
@@ -87,7 +94,7 @@ There, choose **Import Project** and browse to your solution file (.sln) inside 
 
 Make sure that **analyze all Visual Studio configurations** is checked.
 
-### TODO 4
+#### TODO 4
 
 Go to the next tab **Checking**.
 
@@ -98,7 +105,7 @@ Choose the target platform of the project.
 
 Below, check all libraries your project uses or will use (most likely SDL and windows).
 
-### TODO 5
+#### TODO 5
 
 On the next tab, **Warning options**, you can add excluded paths and errors.
 
@@ -108,7 +115,7 @@ By now, we will not exclude any error so we can see all possible issues CppCheck
 
 Click **Done** on the project configuration tab. Accept if you are asked to create the build dir folder.
 
-### TODO 6
+#### TODO 6
 
 Right when you end configuring your CppCheck files, the analysis will start.
 
@@ -118,7 +125,7 @@ You can also access error files inside the build dir folder specified previously
 
 Before proceeding to check the errors, let's configure a bit more our CppCheck.
 
-### TODO 7
+#### TODO 7
 
 Inside the CppCheck menu, go to **Edit/preferences**.
 
@@ -128,7 +135,7 @@ In **Reports**, check both options.
 
 Once finished, close the **Preferences** tab.
 
-### TODO 8
+#### TODO 8
 
 CppCheck can use .cfg files to further configure the analysis.
 
@@ -137,7 +144,7 @@ Go to the folder where our CppCheck file is (TODO 2), create a new Text document
 At the start of the file, write: 
 `<?xml version="1.0"?>`
 
-### TODO 9 
+#### TODO 9 
 
 Open the CppCheck menu and go to **View/Library Editor**. There, go to Open and add the .cfg file we were editing.
 
@@ -147,7 +154,7 @@ Then, double click in any argument to set the rules it must follow. Save once yo
 
 Remember to go to **File/Edit Project -> Checking** tab, and make sure the library *configuration* is checked to start using it.
 
-### TODO 10
+#### TODO 10
 
 Let's check the results from the CppCheck analysis. If you are using the release test code, only a single bug is found related to a const attribute.
 
@@ -155,7 +162,7 @@ However, CppCheck does not find a memory leak that is ocurring in the code.
 
 Let's try another SAC tool: install Visual Code Grapper from the release .zip file or download it from their website.
 
-### TODO 11
+#### TODO 11
 
 Start the program, and make sure that the language in Settings is set to C/C++.
 
@@ -163,7 +170,7 @@ Go to **File/New target** directory and search the folder where your source file
 
 Press **Scan/Full Scan** to start the analysis.
 
-### TODO 12
+#### TODO 12
 
 As you can see if you are using the test code, VCG has found a bug that CppCheck did not found: the memory leak.
 
@@ -172,6 +179,8 @@ It does also analyze comments in search of potential dangers.
 However, we can also see that VCG has not found the const bug that CppCheck did before.
 
 In fact, any of them has found a signed/unsigned mismatch bug in the test code.
+
+____
 
 ## Conclusions 
 
