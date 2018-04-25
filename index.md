@@ -4,8 +4,10 @@ In the following page it is going to be explained what is a Static Code Analysis
 
 I am [Rodrigo De Pedro](https://www.linkedin.com/in/rodrigo-de-pedro-60502b163/), student of the [Bachelor’s Degree in Video Games by UPC at CITM](<https://www.citm.upc.edu/ing/estudis/graus-videojocs/>). This content is generated for the second year’s subject Project 2, under supervision of lecturer [Ricard Pillosu](<https://es.linkedin.com/in/ricardpillosu>) .
 
-You can find my contact info at the bottom of this page.
+You can find my contact info at the bottom of this page.         
+
 ____
+
 
 ## What does it mean Static Code Analysis?
 
