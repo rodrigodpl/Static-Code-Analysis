@@ -76,14 +76,16 @@ Some offline SCA tools are:
 
 ### CppCheck
 
-Pros:     
-- Completely free
-- Highly-customizable
-- Can analyze non-standard code
-- Visual Studio plug-in (here)
-Cons:     
-- Rudimentary, few features
-- False positives
+Pros:       
+- Completely free      
+- Highly-customizable       
+- Can analyze non-standard code      
+- Visual Studio plug-in (here)      
+
+
+Cons:        
+- Rudimentary, few features    
+- False positives     
 
 ____
 
@@ -179,12 +181,13 @@ Inside the CppCheck menu, go to **Edit/preferences**.
 
 1. In **General**, check all options but **Enable inline supressions**.
 
+![TODO 7](https://i.imgur.com/tIQohG5.png)
+
 2. In **Reports**, check both options.
 
-Once finished, close the **Preferences** tab.
-
-![TODO 7](https://i.imgur.com/tIQohG5.png)
 ![TODO 7](https://i.imgur.com/XZKUwqk.png)
+
+Once finished, close the **Preferences** tab.
 
 #### TODO 8
 
@@ -202,9 +205,10 @@ There you can add functions by writing their name and argument number.
 
 Then, double click in any argument to set the rules it must follow. Save once you have finished editing.
 
+![TODO 9](https://i.imgur.com/cFkNzt0.png)
+
 Remember to go to **File/Edit Project -> Checking** tab, and make sure the library *configuration* is checked to start using it.
 
-![TODO 9](https://i.imgur.com/cFkNzt0.png)
 ![TODO 9](https://i.imgur.com/eNFrdse.png)
 
 #### TODO 10
