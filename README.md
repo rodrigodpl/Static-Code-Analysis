@@ -1,4 +1,4 @@
-You can see the same content in this [research's web](https://rodrigodpl.github.io/Static-Code-Analysis/)
+You can see the same content below in a more appealing way in this [research's web](https://rodrigodpl.github.io/Static-Code-Analysis/)
 
 ## Introduction
 
