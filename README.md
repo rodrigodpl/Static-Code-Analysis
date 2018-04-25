@@ -1,4 +1,6 @@
 You can see the same content below in a more appealing way in this [research's web](https://rodrigodpl.github.io/Static-Code-Analysis/)
+
+
 In the following page it is going to be explained what is a Static Code Analysis tool and how to use them in your own Visual Studio projects.
 
 I am [Rodrigo De Pedro](https://www.linkedin.com/in/rodrigo-de-pedro-60502b163/), student of the [Bachelor’s Degree in Video Games by UPC at CITM](<https://www.citm.upc.edu/ing/estudis/graus-videojocs/>). This content is generated for the second year’s subject Project 2, under supervision of lecturer [Ricard Pillosu](<https://es.linkedin.com/in/ricardpillosu>) .
