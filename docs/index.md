@@ -59,9 +59,11 @@ Coverity, as most online SAC tools, uses the BAC workflow, which stands for Buil
 2. Analyze: run the algorithm.
 3. Commit: send it to shared Database
 
+![BAC workflow](https://i.imgur.com/wnkCll6.png)
+
 # Coverity: features
 
-
+![Coverity features](https://i.imgur.com/LPpjI4N.jpg)
 
 ## SCA tools (offline)
 
