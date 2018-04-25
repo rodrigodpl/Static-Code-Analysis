@@ -1,18 +1,16 @@
 You can see the same content below in a more appealing way in this [research's web](https://rodrigodpl.github.io/Static-Code-Analysis/)
-
-## Introduction
-
 In the following page it is going to be explained what is a Static Code Analysis tool and how to use them in your own Visual Studio projects.
 
 I am [Rodrigo De Pedro](https://www.linkedin.com/in/rodrigo-de-pedro-60502b163/), student of the [Bachelor’s Degree in Video Games by UPC at CITM](<https://www.citm.upc.edu/ing/estudis/graus-videojocs/>). This content is generated for the second year’s subject Project 2, under supervision of lecturer [Ricard Pillosu](<https://es.linkedin.com/in/ricardpillosu>) .
 
-You can find my contact info at the bottom if this file.
-
-____
+You can find my contact info at the bottom of this page.           
+       
+___
+      
 
 ## What does it mean Static Code Analysis?
 
-- **Static**: not done in runtime, unlike dynamic code analysis.       
+- **Static**: not done in runtime, unlike *dynamic code analysis*.       
 - **Code**: referent to a program, a set of them, or an entire system.       
 - **Analysis**: check for problems and possible improvements.       
 
@@ -20,12 +18,13 @@ So, SCA is a tool which looks for errors on a specific set of code, before the e
 
 ## What are it's uses?
 
+- Identify anomalies or flaws in the code.    
 - Calculate performance metrics.      
 - Ensure code security against hack attempts.     
 - Enforce coding standards.      
-- Analyze structures and dependencies.     
+- Analyze structures and dependencies.  
+- Track contributors code quality and error rate.
 - Provide accurate and meaningful error descriptions.     
-- Identify anomalies or flaws in the code.    
 
 ## How does it work?
 
@@ -66,58 +65,68 @@ ____
 Next, it's provided a brief tutorial so readers can easily implement SCA tools into their projects.
 Each step of the tutorial will be named as TODO X.
 
+## Release files
+
+It is worth commenting that in this research's github repository you can find some useful files for the tutorial. You can download:
+ 
+- SCA Research Full Code: some sample code to test SCA tools functionality. In this .zip the errors are commented.
+- SCA Research Exercises: the same code, as above, but errors are not commented. 
+- SCA Research Docs: the content of the web in .md and .ppt files to follow it without internet connection.
+- CppCheck + VCG: the program of CppCheck and Visual Code Grepper.
+
 #### TODO 0
 
 First, we must download the necessary files. The installation files for CppCheck and Visual Code Grepper can be found in their respective websites:        
 [CppCheck](http://cppcheck.sourceforge.net/)         
 [VGC](https://sourceforge.net/projects/visualcodegrepp/)      
 
-Alternatively, they are included in the latest release of the Github repository linked to this web, which also contains a small test program to chech SCA functionality. You can use any project he wishes to analyze, yet it must be kept in mind that the comments about errors in the following steps refer only to the provided test code.
+Alternatively, they are included in the release tab of the Github repository linked to this web, which also contains a small test program to chech SCA functionality. You can use any project you wish to analyze, yet it must be kept in mind that the comments about errors in the following steps refer only to the provided test code.
 
 #### TODO 1
 
 Install CppCheck using default options. You can add pyhton functionality if you wish.
 
+ - *if you are using the files in Release: CppCheck full installation included.*
+
 #### TODO 2
 
-Before contiuning, it must be noted that CppCheck runs locally, so you need the projects files to analyze in your computer. If you have them stored in the cloud, download them.       
+Before continuing, it must be noted that CppCheck runs locally, so you need the projects files to analyze in your computer. If you have them stored in the cloud, download them.       
 
-Once CppCheck has finished installating, open the cppcheckgui.exe located in C:/.../Users/User/Program files/CppCheck.     
+1. Once CppCheck has finished installating, open the cppcheckgui.exe located in C:/.../Users/User/Program files/CppCheck.     
 
-Create a folder where we will store our CppCheck files and the output of the analysis. You can create it in the desktop for availability during this tutorial. We'll call this folder *bugtracking*.       
+2. Create a folder where we will store our CppCheck files and the output of the analysis. You can create it in the desktop for availability during this tutorial. We'll call this folder *bugtracking*.       
 
-In the CppCheck menu, go to **New Project**, choose our *bugtracking* folder as location and choose a name for your CppCheck file.     
+3. In the CppCheck menu, go to **New Project**, choose our *bugtracking* folder as location and choose a name for your CppCheck file.     
 
 #### TODO 3
 
 A project configuration pop-up will appear.
 
-Go to the first tab **paths and defines**.
+1. Go to the first tab **paths and defines**.
 
-There, choose **Import Project** and browse to your solution file (.sln) inside your Visual Studio project folder.
+2. There, choose **Import Project** and browse to your solution file (.sln) inside your Visual Studio project folder.
 
-Make sure that **analyze all Visual Studio configurations** is checked.
+3. Make sure that **analyze all Visual Studio configurations** is checked.
 
 #### TODO 4
 
 Go to the next tab **Checking**.
 
-Select a *build dir* (the folder where our analysis results will be stored). This path is relative to the CppCheck project file folder 
-which we have created in TODO 2.
+1. Select a *build dir* (the folder where our analysis results will be stored). This path is relative to the CppCheck project file folder which we have created in TODO 2.
 
-Choose the target platform of the project.
+2. Choose the target platform of the project.
 
-Below, check all libraries your project uses or will use (most likely SDL and windows).
+3. Below, check all libraries your project uses or will use (most likely SDL and windows).
 
 #### TODO 5
 
 On the next tab, **Warning options**, you can add excluded paths and errors.
 
-You will most likely don't want third-party libraries to be checked for errors, so you can add their paths here now.
+1. You will most likely don't want third-party libraries to be checked for errors, so you can add their paths here now.
 
-By now, we will not exclude any error so we can see all possible issues CppCheck can find.
+2. By now, we will not exclude any error so we can see all possible issues CppCheck can find.
 
-Click **Done** on the project configuration tab. Accept if you are asked to create the build dir folder.
+3. Click **Done** on the project configuration tab. Accept if you are asked to create the build dir folder.
 
 #### TODO 6
 
@@ -133,9 +142,9 @@ Before proceeding to check the errors, let's configure a bit more our CppCheck.
 
 Inside the CppCheck menu, go to **Edit/preferences**.
 
-In **General**, check all options but **Enable inline supressions**.
+1. In **General**, check all options but **Enable inline supressions**.
 
-In **Reports**, check both options.
+2. In **Reports**, check both options.
 
 Once finished, close the **Preferences** tab.
 
@@ -143,10 +152,9 @@ Once finished, close the **Preferences** tab.
 
 CppCheck can use .cfg files to further configure the analysis.
 
-Go to the folder where our CppCheck file is (TODO 2), create a new Text document and call it *configuration.cfg*
+1. Go to the folder where our CppCheck file is (TODO 2), create a new Text document and call it *configuration.cfg*
 
-At the start of the file, write: 
-`<?xml version="1.0"?>`
+2. At the start of the file, write: `<?xml version="1.0"?>`
 
 #### TODO 9 
 
@@ -160,29 +168,28 @@ Remember to go to **File/Edit Project -> Checking** tab, and make sure the libra
 
 #### TODO 10
 
-Let's check the results from the CppCheck analysis. If you are using the release test code, only a single bug is found related to a const attribute.
+Let's check the results from the CppCheck analysis. 
+If you are using the release test code, only a single bug is found related to a const attribute. However, we know that there are three bugs, so we can see how CppCheck can help find some bugs, but can as well miss some.
 
-However, CppCheck does not find a memory leak that is ocurring in the code.
+If you are using your code, try to get your own conclusions about the results and compare with what you expected.
 
-Let's try another SAC tool: install Visual Code Grapper from the release .zip file or download it from their website.
+In any case, let's try another SAC tool: install Visual Code Grapper from the release .zip file or download it from their website.
 
 #### TODO 11
 
 Start the program, and make sure that the language in Settings is set to C/C++.
 
-Go to **File/New target** directory and search the folder where your source files are located.
+1. Go to **File/New target** directory and search the folder where your source files are located.
 
-Press **Scan/Full Scan** to start the analysis.
+2. Press **Scan/Full Scan** to start the analysis.
 
 #### TODO 12
 
-As you can see if you are using the test code, VCG has found a bug that CppCheck did not found: the memory leak.
+As you can see if you are using the test code, VCG has found a bug that CppCheck did not found: the memory leak.However, we can also see that VCG has not found the const bug that CppCheck did before. In fact, any of them has found a signed/unsigned mismatch bug in the test code.
 
-It does also analyze comments in search of potential dangers.
+If your using the sample code inside the Full code .zip, you will also notice that it does also analyze comments in search of potential dangers.
 
-However, we can also see that VCG has not found the const bug that CppCheck did before.
-
-In fact, any of them has found a signed/unsigned mismatch bug in the test code.
+If you are, instead, using your own code, you are likely as well to have found different bugs using CppCheck and VCG.
 
 ____
 
