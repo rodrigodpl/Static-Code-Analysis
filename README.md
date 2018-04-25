@@ -76,9 +76,11 @@ Pros:
 - Completely free
 - Highly-customizable
 - Can analyze non-standard code
-- Visual Studio plug-in (here)
-Cons:     
-- Rudimentary, few features
+- Visual Studio plug-in (here)      
+
+
+Cons:        
+- Rudimentary, few features     
 - False positives
 
 ____
