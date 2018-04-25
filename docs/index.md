@@ -97,7 +97,9 @@ Before continuing, it must be noted that CppCheck runs locally, so you need the 
 
 2. Create a folder where we will store our CppCheck files and the output of the analysis. You can create it in the desktop for availability during this tutorial. We'll call this folder *bugtracking*.       
 
-3. In the CppCheck menu, go to **New Project**, choose our *bugtracking* folder as location and choose a name for your CppCheck file.     
+3. In the CppCheck menu, go to **New Project**, choose our *bugtracking* folder as location and choose a name for your CppCheck file.   
+
+![TODO 2](https://i.imgur.com/BsgrhFa.png)
 
 #### TODO 3
 
@@ -109,6 +111,8 @@ A project configuration pop-up will appear.
 
 3. Make sure that **analyze all Visual Studio configurations** is checked.
 
+![TODO 3](https://i.imgur.com/tyPSi3h.png)
+
 #### TODO 4
 
 Go to the next tab **Checking**.
@@ -119,6 +123,8 @@ Go to the next tab **Checking**.
 
 3. Below, check all libraries your project uses or will use (most likely SDL and windows).
 
+![TODO 4](https://i.imgur.com/xVpV5Ny.png)
+
 #### TODO 5
 
 On the next tab, **Warning options**, you can add excluded paths and errors.
@@ -128,6 +134,8 @@ On the next tab, **Warning options**, you can add excluded paths and errors.
 2. By now, we will not exclude any error so we can see all possible issues CppCheck can find.
 
 3. Click **Done** on the project configuration tab. Accept if you are asked to create the build dir folder.
+
+![TODO 5](https://i.imgur.com/dIhU7r7.png)
 
 #### TODO 6
 
@@ -149,6 +157,9 @@ Inside the CppCheck menu, go to **Edit/preferences**.
 
 Once finished, close the **Preferences** tab.
 
+![TODO 7](https://i.imgur.com/tIQohG5.png)
+![TODO 7](https://i.imgur.com/XZKUwqk.png)
+
 #### TODO 8
 
 CppCheck can use .cfg files to further configure the analysis.
@@ -166,6 +177,9 @@ There you can add functions by writing their name and argument number.
 Then, double click in any argument to set the rules it must follow. Save once you have finished editing.
 
 Remember to go to **File/Edit Project -> Checking** tab, and make sure the library *configuration* is checked to start using it.
+
+![TODO 9](https://i.imgur.com/cFkNzt0.png)
+![TODO 9](https://i.imgur.com/eNFrdse.png)
 
 #### TODO 10
 
@@ -189,6 +203,8 @@ Start the program, and make sure that the language in Settings is set to C/C++.
 As you can see if you are using the test code, VCG has found a bug that CppCheck did not found: the memory leak.However, we can also see that VCG has not found the const bug that CppCheck did before. In fact, any of them has found a signed/unsigned mismatch bug in the test code.
 
 If your using the sample code inside the Full code .zip, you will also notice that it does also analyze comments in search of potential dangers.
+
+![TODO 12](https://i.imgur.com/tMhz016.png)
 
 If you are, instead, using your own code, you are likely as well to have found different bugs using CppCheck and VCG.
 
