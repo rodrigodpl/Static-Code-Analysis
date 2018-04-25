@@ -1,5 +1,6 @@
 You can see the same content below in a more appealing way in this [research's web](https://rodrigodpl.github.io/Static-Code-Analysis/)
 
+___
 
 In the following page it is going to be explained what is a Static Code Analysis tool and how to use them in your own Visual Studio projects.
 
