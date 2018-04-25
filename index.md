@@ -2,13 +2,14 @@
 
 In the following page it is going to be explained what is a Static Code Analysis tool and how to use them in your own Visual Studio projects.
 
-I am <link to your linkedIn>(NAME LASTNAME), student of the <https://www.citm.upc.edu/ing/estudis/graus-videojocs/>(Bachelor’s Degree in Video Games by UPC at CITM). This content is generated for the second year’s subject Project 2, under supervision of lecturer <https://es.linkedin.com/in/ricardpillosu> (Ricard Pillosu).
+I am [Rodrigo De Pedro](https://www.linkedin.com/in/rodrigo-de-pedro-60502b163/), student of the [Bachelor’s Degree in Video Games by UPC at CITM](<https://www.citm.upc.edu/ing/estudis/graus-videojocs/>). This content is generated for the second year’s subject Project 2, under supervision of lecturer [Ricard Pillosu](<https://es.linkedin.com/in/ricardpillosu>) .
 
+You can find my contact info at the bottom of this page.
 ____
 
 ## What does it mean Static Code Analysis?
 
-- **Static**: not done in runtime, unlike dynamic code analysis.       
+- **Static**: not done in runtime, unlike *dynamic code analysis*.       
 - **Code**: referent to a program, a set of them, or an entire system.       
 - **Analysis**: check for problems and possible improvements.       
 
@@ -16,12 +17,13 @@ So, SCA is a tool which looks for errors on a specific set of code, before the e
 
 ## What are it's uses?
 
+- Identify anomalies or flaws in the code.    
 - Calculate performance metrics.      
 - Ensure code security against hack attempts.     
 - Enforce coding standards.      
-- Analyze structures and dependencies.     
+- Analyze structures and dependencies.  
+- Track contributors code quality and error rate.
 - Provide accurate and meaningful error descriptions.     
-- Identify anomalies or flaws in the code.    
 
 ## How does it work?
 
