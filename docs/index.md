@@ -50,7 +50,7 @@ Some online SCA tools are:
 1. **Coverity** ( Paid/ integrated with Git/ supports Java, C++, C# Python and Ruby)        
 2. **QonCAT** (Paid/ supports multiple languages / quality analysis and metrics)       
 
-# Coverity: the BAC workflow
+### Coverity: the BAC workflow
 
 Coverity, as most online SAC tools, uses the BAC workflow, which stands for Build, Analyze, Commit.
 
@@ -61,7 +61,7 @@ Coverity, as most online SAC tools, uses the BAC workflow, which stands for Buil
 
 ![BAC workflow](https://i.imgur.com/wnkCll6.png)
 
-# Coverity: features
+### Coverity: features
 
 ![Coverity features](https://i.imgur.com/LPpjI4N.jpg)
 
@@ -74,7 +74,7 @@ Some offline SCA tools are:
 2. **CheckMark products** ( Paid / lots of features / dedicated products / supports +20 languages)      
 3. **CppCheck** ( Free / we will check it later )     
 
-# CppCheck
+### CppCheck
 
 Pros:     
 - Completely free
