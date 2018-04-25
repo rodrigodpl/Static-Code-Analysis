@@ -2,13 +2,16 @@
 
 In the following page it is going to be explained what is a Static Code Analysis tool and how to use them in your own Visual Studio projects.
 
-I am <link to your linkedIn>(NAME LASTNAME), student of the <https://www.citm.upc.edu/ing/estudis/graus-videojocs/>(Bachelor’s Degree in Video Games by UPC at CITM). This content is generated for the second year’s subject Project 2, under supervision of lecturer <https://es.linkedin.com/in/ricardpillosu> (Ricard Pillosu).
+I am [Rodrigo De Pedro](https://www.linkedin.com/in/rodrigo-de-pedro-60502b163/), student of the [Bachelor’s Degree in Video Games by UPC at CITM](<https://www.citm.upc.edu/ing/estudis/graus-videojocs/>). This content is generated for the second year’s subject Project 2, under supervision of lecturer [Ricard Pillosu](<https://es.linkedin.com/in/ricardpillosu>) .
 
-____
+You can find my contact info at the bottom of this page.           
+       
+___
+      
 
 ## What does it mean Static Code Analysis?
 
-- **Static**: not done in runtime, unlike dynamic code analysis.       
+- **Static**: not done in runtime, unlike *dynamic code analysis*.       
 - **Code**: referent to a program, a set of them, or an entire system.       
 - **Analysis**: check for problems and possible improvements.       
 
@@ -16,12 +19,13 @@ So, SCA is a tool which looks for errors on a specific set of code, before the e
 
 ## What are it's uses?
 
+- Identify anomalies or flaws in the code.    
 - Calculate performance metrics.      
 - Ensure code security against hack attempts.     
 - Enforce coding standards.      
-- Analyze structures and dependencies.     
+- Analyze structures and dependencies.  
+- Track contributors code quality and error rate.
 - Provide accurate and meaningful error descriptions.     
-- Identify anomalies or flaws in the code.    
 
 ## How does it work?
 
@@ -68,7 +72,7 @@ First, we must download the necessary files. The installation files for CppCheck
 [CppCheck](http://cppcheck.sourceforge.net/)         
 [VGC](https://sourceforge.net/projects/visualcodegrepp/)      
 
-Alternatively, they are included in the latest release of the Github repository linked to this web, which also contains a small test program to chech SCA functionality. You can use any project he wishes to analyze, yet it must be kept in mind that the comments about errors in the following steps refer only to the provided test code.
+Alternatively, they are included in the latest release of the Github repository linked to this web, which also contains a small test program to chech SCA functionality. You can use any project you wish to analyze, yet it must be kept in mind that the comments about errors in the following steps refer only to the provided test code.
 
 #### TODO 1
 
@@ -76,7 +80,7 @@ Install CppCheck using default options. You can add pyhton functionality if you 
 
 #### TODO 2
 
-Before contiuning, it must be noted that CppCheck runs locally, so you need the projects files to analyze in your computer. If you have them stored in the cloud, download them.       
+Before continuing, it must be noted that CppCheck runs locally, so you need the projects files to analyze in your computer. If you have them stored in the cloud, download them.       
 
 Once CppCheck has finished installating, open the cppcheckgui.exe located in C:/.../Users/User/Program files/CppCheck.     
 
