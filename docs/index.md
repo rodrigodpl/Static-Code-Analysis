@@ -66,17 +66,28 @@ ____
 Next, it's provided a brief tutorial so readers can easily implement SCA tools into their projects.
 Each step of the tutorial will be named as TODO X.
 
+## Release files
+
+It is worth commenting that in this research's github repository you can find some useful files for the tutorial. You can download:
+ 
+- SCA Research Full Code: some sample code to test SCA tools functionality. In this .zip the errors are commented.
+- SCA Research Exercises: the same code, as above, but errors are not commented. 
+- SCA Research Docs: the content of the web in .md and .ppt files to follow it without internet connection.
+- CppCheck + VCG: the program of CppCheck and Visual Code Grepper.
+
 #### TODO 0
 
 First, we must download the necessary files. The installation files for CppCheck and Visual Code Grepper can be found in their respective websites:        
 [CppCheck](http://cppcheck.sourceforge.net/)         
 [VGC](https://sourceforge.net/projects/visualcodegrepp/)      
 
-Alternatively, they are included in the latest release of the Github repository linked to this web, which also contains a small test program to chech SCA functionality. You can use any project you wish to analyze, yet it must be kept in mind that the comments about errors in the following steps refer only to the provided test code.
+Alternatively, they are included in the release tab of the Github repository linked to this web, which also contains a small test program to chech SCA functionality. You can use any project you wish to analyze, yet it must be kept in mind that the comments about errors in the following steps refer only to the provided test code.
 
 #### TODO 1
 
 Install CppCheck using default options. You can add pyhton functionality if you wish.
+
+ - *if you are using the files in Release*: CppCheck full installation included.
 
 #### TODO 2
 
