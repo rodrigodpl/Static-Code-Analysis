@@ -40,6 +40,28 @@ A summary of the ideas of the video could be:
  - Then, it creates a dependecy graph and analyzes it looking for errors.
  - If the program is online, this data is sent to a server to be distributed to other contributors.
  
+ 
+## SCA tools (online)
+
+Some online SCA tools allow to copy the code fragment to analyze directly into their webpage.       
+However, the main benefit of online tools comes when used in sync with a code storage service (Git, Bitbucket).       
+This allows to automatic and continuous evaluation of the code written by all team members.      
+Some online SCA tools are:     
+1. **Coverity** ( Paid/ integrated with Git/ supports Java, C++, C# Python and Ruby)        
+2. **QonCAT** (Paid/ supports multiple languages / quality analysis and metrics)       
+
+# Coverity: the BAC workflow
+
+Coverity, as most online SAC tools, uses the BAC workflow, which stands for Build, Analyze, Commit.
+
+0. Configure: programming language, compiler...
+1. Build: Coverity build, not Visual Studio!
+2. Analyze: run the algorithm.
+3. Commit: send it to shared Database
+
+# Coverity: features
+
+
 
 ## SCA tools (offline)
 
@@ -50,14 +72,16 @@ Some offline SCA tools are:
 2. **CheckMark products** ( Paid / lots of features / dedicated products / supports +20 languages)      
 3. **CppCheck** ( Free / we will check it later )     
 
-## SCA tools (online)
+# CppCheck
 
-Some online SCA tools allow to copy the code fragment to analyze directly into their webpage.       
-However, the main benefit of online tools comes when used in sync with a code storage service (Git, Bitbucket).       
-This allows to automatic and continuous evaluation of the code written by all team members.      
-Some online SCA tools are:     
-1. **Coverity** ( Paid/ integrated with Git/ supports Java, C++, C# Python and Ruby)        
-2. **QonCAT** (Paid/ supports multiple languages / quality analysis and metrics)       
+Pros:     
+- Completely free
+- Highly-customizable
+- Can analyze non-standard code
+- Visual Studio plug-in (here)
+Cons:     
+- Rudimentary, few features
+- False positives
 
 ____
 
